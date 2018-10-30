@@ -30,11 +30,11 @@ class EmployeeList extends Component {
   }
 
   renderRow = (employee) => {
-    return <ListItem employee={employee} />;
+    return <ListItem employee={employee} navigation={this.props.navigation} />;
   }
 
   render() {
-    console.log("EmployeeList", this.props);
+    console.log("EmployeeList", this.props.employee);
     return (
       <Container>
         <Header style={{backgroundColor: 'black'}}>
